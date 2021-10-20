@@ -161,6 +161,10 @@ Mas o stack trace da call em tail é aparente que o espaço é melhor utilizado.
 
 fonte: https://stackoverflow.com/questions/310974/what-is-tail-call-optimization
 
+### addendo - memoizing
+
+...
+
 ## desenvolvimento 2 - performance recursão vs iteração
 
 A performance de um código pode ser medido de duas formas:
