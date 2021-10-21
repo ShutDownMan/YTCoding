@@ -6,13 +6,19 @@ Recursão, em termos computacionais é quando você chama uma função dentro de
 
 Mas não é tão simples assim, para ser uma real recursão **o problema** deve ser recursivo.
 
+----
+
 Um problema recursivo é um problema que possui 2 propriedades importantes...
 
 Uma simetria, esta bastante interessante, de que **para resolver o problema total deve-se resolver uma versão "menor" deste embutido**.
 
+----
+
 Uma ajuda visual seria aquelas bonecas russas, que possuem versões de sí mesmas, menores, quando as abrimos.
 
 Ou até um jogo de panelas novinho, que possuem panelas iguaizinhas dentro uma das outras, porém, obviamente menores.
+
+----
 
 Outra propriedade que um problema recursivo deve ter (para ser computável) é um caso base.
 

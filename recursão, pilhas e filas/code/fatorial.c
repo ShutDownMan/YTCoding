@@ -16,7 +16,6 @@ long long int fatorialIter(unsigned long long int n)
 
 	for(int i = n; i; i--)
 		res *= i;
-		
 
 	return res;
 }
