@@ -28,23 +28,27 @@ Isso é importante já que, se realmente queremos computar algum resultado, a re
 
 Podemos usar como exemplo a função Fatorial, muito utilizada em análise combinatória.
 
-Essa função é definida como: `x! = x * (x - 1)!` e `0! = 1`
+Essa função é definida como: `n! = n * (n - 1)!` e `0! = 1`
 
 Para implementarmos ela em C podemos fazer da seguinte forma:
 
-    int fatorial(unsigned int x) {
+    unsigned int fatorial(unsigned int n) {
         /// caso base
-        if(x == 0) return 1;
+        if(n == 0) return 1;
 
         /// passo de recursão
-        return x * fatorial(x - 1);
+        return n * fatorial(n - 1);
     }
 
-Podemos verificar o caso base quando `x = 0` que para a cadeia de chamadas.
+----
 
-E o passo de recursão que chama a própria função, porém, com o x decrementado.
+Podemos verificar o caso base quando `n = 0` que para a cadeia de chamadas.
 
-Dado um `x` qualquer (maior ou igual a 0), esta função vai "cortando" o problema, diminuindo até sua ultima chamada, a qual retorna apenas um simples valor, `1`.
+E o passo de recursão que chama a própria função, porém, com o n decrementado.
+
+----
+
+Dado um `n` qualquer (maior ou igual a 0), esta função vai "expandindo" o problema, até chegar no caso base, o qual retorna apenas um simples valor, `1`.
 
 Esse valor retorna multiplicando os outros, resultando, finalmente, no fatorial do número dado.
 
@@ -56,7 +60,7 @@ Podemos dizer que a solução recursiva para esse problema é bastante elegante 
 
 Mas então, vamos aplicar recursão a todo problema que tem essas duas propriedades?
 
-Se alguém nos pedisse para implementar uma função, a qual calculasse a soma de 1 a x, provavelmente não a faríamos utilizando recursão.
+Se alguém nos pedisse para implementar uma função, a qual calculasse a soma de 1 a n, provavelmente não a faríamos utilizando recursão.
 
 O problema dado não é inerentemente recursivo, sendo assim, sua resolução de modo recursivo tem uma aparência forçada, enquanto o iterado pode parecer mais intuitivo.
 
@@ -167,7 +171,7 @@ Mas o stack trace da call em tail é aparente que o espaço é melhor utilizado.
 
 fonte: https://stackoverflow.com/questions/310974/what-is-tail-call-optimization
 
-### addendo - memoizing
+### adendo - memoizing
 
 ...
 
