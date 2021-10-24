@@ -24,6 +24,8 @@ Outra propriedade que um problema recursivo deve ter (para ser computável) é u
 
 Isso é importante já que, se realmente queremos computar algum resultado, a recursão não deve repetir infinitamente.
 
+----
+
 ### exemplo
 
 Podemos usar como exemplo a função Fatorial, muito utilizada em análise combinatória.
@@ -54,15 +56,21 @@ Esse valor retorna multiplicando os outros, resultando, finalmente, no fatorial 
 
 Podemos dizer que a solução recursiva para esse problema é bastante elegante e concisa.
 
+----
+
 ## desenvolvimento 1 - estruturas de dados e impactos na resolução de problemas
 
 ### recursão não é pau pra toda obra
 
 Mas então, vamos aplicar recursão a todo problema que tem essas duas propriedades?
 
-Se alguém nos pedisse para implementar uma função, a qual calculasse a soma de 1 a n, provavelmente não a faríamos utilizando recursão.
+Se alguém nos pedisse para implementar uma função, a qual contasse de `1 a n`, provavelmente não a faríamos utilizando recursão.
 
-O problema dado não é inerentemente recursivo, sendo assim, sua resolução de modo recursivo tem uma aparência forçada, enquanto o iterado pode parecer mais intuitivo.
+O problema dado não é inerentemente recursivo, sendo assim, sua implementação pela abordagem recursiva tem uma aparência forçada
+
+Enquanto a iterada pode parecer mais intuitiva.
+
+----
 
 Isso por algumas razões, uma delas é por inteligibilidade (ou seja, clareza).
 
@@ -72,11 +80,15 @@ Buscamos pois podemos não ser os únicos mantenedores daquele código, outras p
 
 E a facilidade de compreensão torna melhor a vida dos nossos colegas e até de nós mesmos.
 
+----
+
 ### a recursão e a stack
 
 A recursão em código existe desde a primeira linguagem de  programação (de alto nível), FORTRAN. Mas não nas primeiras versões de FORTRAN.
 
 Para entender por que FORTRAN não tinha recursão nas suas primeiras versões, precisamos entender duas coisas: a stack e como uma função é chamada.
+
+----
 
 #### a stack
 
@@ -87,6 +99,10 @@ Na inserção: quando um item é adicionado, ele é colocado no topo do ultimo i
 Na remoção: apenas o item do topo da stack é removido.
 
 Isso cria o efeito de o último a entrar é o primeiro a sair (Last In First Out - LIFO).
+
+As stacks como estrutura de dados são normalmente representadas crescendo para baixo, no sentido crescente dos endereços de memória.
+
+----
 
 #### chamada de função
 
