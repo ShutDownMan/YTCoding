@@ -60,7 +60,7 @@ Mas então, vamos aplicar recursão a todo problema que tem essas duas proprieda
 
 Como diz o ditado: quando temos um martelo tudo parece prego.
 
-Da mesma forma, quando aprendemos uma ferramenta nova queremos utiliza-la em todos os problemas que encontramos.
+Da mesma forma, quando aprendemos uma ferramenta nova queremos utiliza-lá em todos os problemas que encontramos.
 
 ----
 
