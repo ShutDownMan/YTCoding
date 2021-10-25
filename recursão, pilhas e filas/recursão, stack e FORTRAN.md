@@ -14,12 +14,6 @@ Uma simetria, esta bastante interessante, de que **para resolver o problema tota
 
 ----
 
-Uma ajuda visual seria aquelas bonecas russas, que possuem versões de sí mesmas, menores, quando as abrimos.
-
-Ou até um jogo de panelas novinho, que possuem panelas iguaizinhas dentro uma das outras, porém, obviamente menores.
-
-----
-
 Outra propriedade que um problema recursivo deve ter (para ser computável) é um caso base.
 
 Isso é importante já que, se realmente queremos computar algum resultado, a recursão não deve repetir infinitamente.
@@ -64,11 +58,17 @@ Podemos dizer que a solução recursiva para esse problema é bastante elegante 
 
 Mas então, vamos aplicar recursão a todo problema que tem essas duas propriedades?
 
-Se alguém nos pedisse para implementar uma função, a qual contasse de `1 a n`, provavelmente não a faríamos utilizando recursão.
+Como diz o ditado: quando temos um martelo tudo parece prego.
+
+Da mesma forma, quando aprendemos uma ferramenta nova queremos utiliza-la em todos os problemas que encontramos.
+
+----
+
+Porém, se alguém nos pedisse para implementar uma função, a qual contasse de `1 a n`, provavelmente não a faríamos utilizando recursão.
 
 O problema dado não é inerentemente recursivo, sendo assim, sua implementação pela abordagem recursiva tem uma aparência forçada
 
-Enquanto a iterada pode parecer mais intuitiva.
+Enquanto a iterada pode parecer mais intuitiva neste exemplo.
 
 ----
 
