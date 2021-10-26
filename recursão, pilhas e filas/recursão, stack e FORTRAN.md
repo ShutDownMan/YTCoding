@@ -74,7 +74,7 @@ Enquanto a iterada pode parecer mais intuitiva neste exemplo.
 
 Isso por algumas razões, uma delas é por inteligibilidade (ou seja, clareza).
 
-E inteligibilidade é algo que buscamos bastante no código.
+E a clareza no código é algo que buscamos sempre.
 
 Buscamos pois podemos não ser os únicos mantenedores daquele código, outras pessoas também precisam entender e modificar aquilo que implementamos.
 
@@ -84,7 +84,7 @@ E a facilidade de compreensão torna melhor a vida dos nossos colegas e até de 
 
 ### a recursão e a stack
 
-A recursão em código existe desde a primeira linguagem de  programação (de alto nível), FORTRAN. Mas não nas primeiras versões de FORTRAN.
+A recursão em código existe desde a primeira linguagem de programação (de alto nível), FORTRAN. Mas não nas primeiras versões de FORTRAN.
 
 Para entender por que FORTRAN não tinha recursão nas suas primeiras versões, precisamos entender duas coisas: a stack e como uma função é chamada.
 

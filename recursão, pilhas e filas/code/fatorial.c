@@ -14,13 +14,14 @@ long long int fatorialIter(unsigned long long int n)
 {
 	unsigned long long int res = 1;
 
-	for(int i = n; i; i--)
+	for (int i = n; i; i--)
 		res *= i;
 
 	return res;
 }
 
-void timeFatorialRec(int n) {
+void timeFatorialRec(int n)
+{
 	clock_t begin = clock();
 
 	for (int i = 0; i < n; i++)
@@ -32,7 +33,8 @@ void timeFatorialRec(int n) {
 	printf("%lf\n", timeSpent);
 }
 
-void timeFatorialIter(int n) {
+void timeFatorialIter(int n)
+{
 	clock_t begin = clock();
 
 	for (int i = 0; i < n; i++)
