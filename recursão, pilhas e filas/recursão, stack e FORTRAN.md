@@ -106,7 +106,7 @@ As stacks como estrutura de dados são normalmente representadas crescendo para 
 
 #### chamada de função
 
-Uma chamada de função (em resumo) segue os seguintes passos:
+Uma chamada de função (em resumo) segue os seguintes passos*:
 
 Os argumentos passados são alocados em memória e atribuidos os valores, um na frente do outro.
 
@@ -115,6 +115,8 @@ As variáveis locais (do escopo da função chamada) são alocadas em memória.
 O ponteiro de instrução, que aponta para onde o código está sendo executado dentro de um programa, é salvo na stack.
 
 E seu valor é passado da função chamadora para a função chamada.
+
+*Importante dizer que existem várias convenções de chamadas de funções
 
 #### how FORTRAN did it
 
